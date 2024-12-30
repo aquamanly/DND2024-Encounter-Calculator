@@ -43,7 +43,7 @@ export default function MyMonsters({ count, onValueChange }) {
   const handleInputChange = (event) => {
     const [cr, xp] = event.target.value.split(",");
     setLabel([cr, xp]);
-    onValueChange(event.target.value+","+event.target.id);
+    onValueChange(event.target.value + "," + event.target.id);
   };
 
   return (
