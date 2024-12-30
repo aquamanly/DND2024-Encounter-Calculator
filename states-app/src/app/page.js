@@ -3,6 +3,17 @@ import styles from "./page.module.css";
 import { useState } from "react";
 import MyButton from "./TheButton";
 import MyMonsters from "./TheMonsters";
+/**
+ * 
+ * @todo
+ * 
+ * I need the app to be able to calculate based on player level, the players difficulty. 
+ * And the difficulty is based on the players in the encounter
+ * and a sum of the difficulty of their levels.
+ * 
+ * I know it doesnt make much sense, but to mme it does. 
+ */
+
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -13,7 +24,6 @@ export default function Home() {
   const [valueFromChild, setValueFromChild] = useState('');
   const [sumOfXp, setSumOfXp] = useState(0);
 
-  //let monsterTotalXp = 0;
 
   const handleClick = () => setCount(count + 1);
 
